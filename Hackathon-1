@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class HouseHold {
+public static double WaterConsumed(double WaterConsumedMorning,double WaterConsumedEvening){
+ return WaterConsumedMorning+WaterConsumedEvening;
+}
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter NumberOfHouseMembers: ");
+        int NumberOFfamilymembers = sc.nextInt();
+        System.out.println("Enter Water Consumed:");
+        double WaterConsumed = sc.nextDouble();
+        System.out.println("Enter House number:");
+        int HouseNumber = sc.nextInt();
+        System.out.println("Enter Water Usage:");
+        char WaterUsageStatus = sc.next().charAt(0);
+        System.out.println("Enter Water Consumed Morning:");
+        double WaterConsumedMorning = sc.nextDouble();
+        System.out.println("Enter Water Consumed Evening:");
+        double WaterConsumedEvening = sc.nextDouble();
+        System.out.println("NumberOfHouseMembers: " +NumberOFfamilymembers);
+        System.out.println("Water Consumed:" +WaterConsumed);
+        System.out.println("House Number:" +HouseNumber);
+        System.out.println("Water Usage Status:" +WaterUsageStatus);
+        System.out.println("Water Consumed Morning:" + WaterConsumedMorning );
+        System.out.println(" Water Consumed Evening:" + WaterConsumedEvening);
+      if(WaterConsumed<=500){System.out.println("bill = 100");}
+      else{System.out.println("bill = 200");}
+    WaterConsumed( WaterConsumedMorning,WaterConsumedEvening);
+    System.out.println("Total Water Consumed=" +(WaterConsumedMorning+WaterConsumedEvening));
+    }
+}
+
+
+
